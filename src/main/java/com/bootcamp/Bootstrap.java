@@ -35,7 +35,7 @@ public class Bootstrap extends HttpServlet {
     List<GrantType> grantTypes = new ArrayList<GrantType>();
 
     ImplicitGrant implicitGrant = new ImplicitGrant(
-      new LoginEndpoint("http://localhost:9090/oauth/dialog"),
+      new LoginEndpoint("http://localhost:8080/oauth/dialog"),
       "access_code");
 
     grantTypes.add(implicitGrant);
